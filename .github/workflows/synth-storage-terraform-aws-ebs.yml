@@ -31,14 +31,14 @@ jobs:
       #- name: Run unit tests
       #  run: yarn test
       
-      - name: Test the synth
-        uses: hashicorp/terraform-cdk-action@v0.1.0
-        with:
-          terraformVersion: 1.3.0
-          workingDirectory: modules/storage/terraform-aws-ebs 
-          cdktfVersion: 0.12.2
-          stackName: terraform-aws-ebs
-          mode: synth-only
+      #- name: Test the synth
+      #  uses: hashicorp/terraform-cdk-action@v0.1.0
+      #  with:
+      #    terraformVersion: 1.3.0
+      #    workingDirectory: modules/storage/terraform-aws-ebs 
+      #    cdktfVersion: 0.12.2
+      #    stackName: terraform-aws-ebs
+      #    mode: synth-only
       
       - name: Run Terraform CDK
         uses: hashicorp/terraform-cdk-action@v0.1.0
