@@ -23,13 +23,9 @@ jobs:
 
       - name: Install dependencies
         run: yarn install
-        with:
-          working-directory: {{ROOT_DIR}}/{{CATEGORY}}/{{STACK_NAME}}
 
       - name: Generate module and provider bindings
         run: npx cdktf-cli get
-        with:
-          working-directory: {{ROOT_DIR}}/{{CATEGORY}}/{{STACK_NAME}}
 
       # Remove this step if you don't have any
       #- name: Run unit tests

@@ -30,13 +30,9 @@ jobs:
 
       - name: Install dependencies
         run: yarn install
-        with:
-          working-directory: modules/storage/terraform-aws-ebs
 
       - name: Generate module and provider bindings
         run: npx cdktf-cli get
-        with:
-          working-directory: modules/storage/terraform-aws-ebs
 
       # Remove this step if you don't have any
       #- name: Run unit tests
